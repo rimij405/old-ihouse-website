@@ -1,0 +1,544 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+/*
+	MIT LICENSE
+	Copyright [2016] [Ian Effendi and Jason Carr]
+
+	This document is a customized stylesheet for the International House webpage.
+*/
+
+/* ==========================================================================
+Global
+========================================================================== */
+
+html {
+	width: 100%;
+	margin: 0;
+}
+p, div {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	line-height: 150%;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: "Merriweather", serif;
+	font-size: 28px;
+}
+body {
+	background-color: #f2efea;
+	width: 100%;
+}
+.website{
+	width: 100%;
+	margin-right: 0px;
+}
+.divider {
+	width: 25%;
+	border-top: 1px solid #212121;
+}
+.divider-white {
+	width: 25%;
+	border-top: 1px solid #fff;
+}
+.space {
+	margin: 55px 0px;
+}
+.credentials > p,
+.credentials > h6{
+	font-family: "Merriweather", "Open Sans", serif;
+	font-size: 11px;
+	line-height: 150%;
+
+}
+.credentials {
+		margin-top: 3%;
+}
+
+#bars span {
+	font-size: 28px;
+}
+
+@media (max-width: 767px) {
+	.space {
+		 margin: 50px 0px;
+	}
+
+	p, div {
+		font-family: "Open Sans", sans-serif;
+		font-size: 18px;
+		line-height: 160%;
+	}
+
+	h1, .h1 {
+		font-family: "Cabin", sans-serif;
+		font-size: 20px;
+	}
+
+	h4, .h4 {
+		font-size: 22px;
+	}
+
+	.credentials > p,
+	.credentials > h6 {
+		font-family: "Cabin", sans-serif;
+		font-size: 10px;
+		line-height: 200%;
+	}
+
+	.credentials {
+			margin-top: 10%;
+	}
+
+	.pagination-column {
+		 margin-top: 15px;
+	}
+}
+
+
+/* ==========================================================================
+Hero
+========================================================================== */
+
+.hero {
+			background: url('../img/ihouse.jpg') no-repeat center center;
+
+			background-size: cover;
+				-webkit-background-size: cover;
+  			-moz-background-size: cover;
+	 			-o-background-size: cover;
+
+	  	padding: 65px 0 300px 0;
+		 	height: auto;
+}
+
+.hero-overlay { color:#ffffff; }
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+footer {
+	height: auto;
+	width: 100%;
+	background-color: #030910;
+	color: #ffffff;
+}
+
+footer > .container-fluid {
+	padding: 0;
+}
+
+.social-footer-area {
+	background: #f2efea;
+	color: #242830;
+}
+
+.social-footer-area > .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.social-footer {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.social-footer a {
+	width: 40px;
+	height: 40px;
+	margin: 5px 5px 5px 5px;
+
+
+	border-radius: 50%;
+	 	-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	 	-o-border-radius: 50%;
+
+	background: #242830;
+	display: inline-block;
+	color: #fff;
+	font-size: 17px;
+	line-height: 40px;
+	text-align: center;
+}
+.social-btn:hover, .social-btn:focus { background: #4b92db; color: #fff; }
+.social { margin-top: 25px }
+
+.nav-footer a {
+	color: #fff;
+}
+
+.site-nav-pager {
+	margin: 25px 0;
+}
+
+.nav-footer {
+	clear: left;
+	margin-left: 15px;
+	padding: 5px 15px;
+}
+
+.pagination {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+
+	max-width: 95%;
+
+}
+/* ===========================================================================
+Dividers
+=========================================================================== */
+
+.left-divider {
+	border-left: 1px solid #fff;
+	margin-left: 5px;
+}
+
+.right-divider {
+	border-right: 1px solid #fff;
+	margin-right: 5px;
+}
+
+.bottom-divider {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 5px;
+}
+
+.top-divider {
+	border-top: 1px solid #fff;
+	margin-top: 5px;
+}
+
+/* ==========================================================================
+Navbar
+========================================================================== */
+
+.navbar-ihouse {
+  background-color: #4b92db;
+  border-color: #3476b4;
+	padding-right: 0px;
+	margin-right: 0px;
+}
+
+.navbar-ihouse .navbar-brand {
+  color: #ffffff;
+
+}
+
+.navbar-i .navbar-brand:hover,
+.navbar-ihouse .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+.navbar-ihouse .navbar-text {
+  color: #ffffff;
+}
+.navbar-ihouse .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-ihouse .navbar-nav > li > a:hover,
+.navbar-ihouse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #3476b4;
+}
+.navbar-ihouse .navbar-nav > .active > a,
+.navbar-ihouse .navbar-nav > .active > a:hover,
+.navbar-ihouse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #3476b4;
+}
+.navbar-ihouse .navbar-nav > .disabled > a,
+.navbar-ihouse .navbar-nav > .disabled > a:hover,
+.navbar-ihouse .navbar-nav > .disabled > a:focus {
+  color: #444444;
+  background-color: transparent;
+}
+.navbar-ihouse .navbar-toggle {
+  border-color: transparent;
+}
+.navbar-ihouse .navbar-toggle:hover,
+.navbar-ihouse .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-ihouse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-ihouse .navbar-collapse,
+.navbar-ihouse .navbar-form {
+  border-color: #007196;
+}
+.navbar-ihouse .navbar-nav > .open > a,
+.navbar-ihouse .navbar-nav > .open > a:hover,
+.navbar-ihouse .navbar-nav > .open > a:focus {
+  background-color: #3476b4;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #3476b4;
+  }
+  .navbar-ihouse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #3476b4;
+  }
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #3476b4;
+  }
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #3476b4;
+  }
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-ihouse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444444;
+    background-color: transparent;
+  }
+}
+.navbar-ihouse .navbar-link {
+  color: #ffffff;
+}
+.navbar-ihouse .navbar-link:hover {
+  color: #ffffff;
+}
+.navbar-ihouse .btn-link {
+  color: #ffffff;
+}
+.navbar-ihouse .btn-link:hover,
+.navbar-ihouse .btn-link:focus {
+  color: #ffffff;
+}
+.navbar-ihouse .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-ihouse .btn-link:hover,
+.navbar-ihouse .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-ihouse .btn-link:focus {
+  color: #444444;
+}
+
+.logo {
+	float: left;
+}
+
+.logo-text {
+	color: #ffffff;
+
+	display: inline-block;
+
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	clear: left;
+	font-family: "Open Sans", serif;
+	font-style: normal;
+}
+
+/*navbar-mobile, navbar-desktop stylings*/
+.navbar-collapse {
+	margin-top: 35px;
+}
+
+#brand {
+	  position: relative;
+	  float: left;
+	  margin-left: 15px;
+
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+
+	  margin-top: 5.5px;
+	  margin-bottom: 5.5px;
+	  background-color: transparent;
+	  background-image: none;
+	  border: 1px solid transparent;
+	  border-radius: 0;
+}
+
+#brand:focus {
+	  /* outline: 0; */
+}
+
+#brand #brand-img {
+	  display: block;
+	  width: 35px;
+	  height: 35px;
+	  border-radius: 1px;
+}
+
+#brand-img {
+		margin-top: -5.5px;
+}
+
+#brand:hover, #bars:hover, #bars:focus {
+		background-color: #3476b4;
+}
+
+.navbar-desktop-header {
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+
+.navbar-desktop-links {
+		position: relative;
+		float: right;
+		margin-right: 0px;
+		padding: 4px 10px;
+		margin-top: 2.5px;
+		margin-bottom: 5px;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 0;
+
+		font-size: 18px;
+}
+
+@media (max-width: 1550px) {
+		.navbar-desktop-links {
+				position: relative;
+				float: right;
+				margin-right: 0px;
+				padding: 0px;
+				margin-top: 2.5px;
+				margin-bottom: 5px;
+				background-color: transparent;
+				background-image: none;
+				border: 1px solid transparent;
+				border-radius: 0;
+
+				font-size: 16px;
+		}
+
+		.navbar-nav > li > a.navbar-link-padding {
+			  padding: 16px 7px;
+		}
+}
+
+@media (max-width: 1200px){
+		.navbar-desktop-links {
+				position: relative;
+				float: right;
+				margin-right: 15px;
+				padding: 4px 10px;
+				margin-top: -2px;
+				margin-bottom: 5.5px;
+				background-color: transparent;
+				background-image: none;
+				border: 1px solid transparent;
+				border-radius: 0;
+
+				font-size: 20px;
+		}
+
+	.hidden-custom {
+		 display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo-text {
+		color: #ffffff;
+
+		display: block;
+
+		margin-top: -52.5px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 5px;
+
+		clear: none;
+		font-family: "Open Sans", serif;
+		font-size: 28px;
+		font-style: normal;
+	}
+
+	.navbar-mobile-header {
+		height: 50px;
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+
+	.navbar-link {
+		font-size: 28px;
+	}
+
+	.nav-footer {
+		margin-left: 15px;
+		margin-right: 0px;
+		padding: 5px 15px;
+	}
+}
+
+@media (max-width: 470px) {
+	.logo-text {
+		color: #ffffff;
+
+		display: block;
+
+		margin-top: -47.5px;
+		margin-bottom: 24.5px;
+		margin-left: 0px;
+		margin-right: 5px;
+
+		clear: none;
+		font-family: "Open Sans", serif;
+		font-size: 20px;
+		font-style: normal;
+	}
+
+	p, div {
+		font-size: 22px;
+	}
+
+	#bars span{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 387px) {
+		 .logo-text {
+			 margin-top: -56.5px;
+		 }
+}
+
+@media (max-width: 352px) {
+	 .logo-text {
+		 margin-top: -53.5px;
+		 font-size:16px;
+	 }
+
+	 	p, div, a {
+	 		font-family: "Open Sans", sans-serif;
+	 		font-size: 14px;
+	 		line-height: 160%;
+	 	}
+
+	 	h1, .h1 {
+	 		font-family: "Cabin", sans-serif;
+	 		font-size: 16px;
+	 	}
+
+	 	h4, .h4 {
+	 		font-size: 18px;
+	 	}
+}
+
+@media (max-width: 302px){
+		.logo-text {
+			display: none;
+		}
+}
