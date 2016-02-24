@@ -1,4 +1,4 @@
-# rimij405.github.io / jasoncarr0.github.io
+# jasoncarr0.github.io
 
 This is an impromptu staging area before we push this bad boy to production.
 
